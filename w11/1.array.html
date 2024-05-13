@@ -1,0 +1,65 @@
+<html>
+ <head>
+
+ </head>
+ <body>
+    <h1>
+       축구
+    </h1>
+    <h2>
+      epl k-league
+    </h2>
+    <h3>
+      맨시티 토트넘 서울 수원
+    </h3>
+    <li> 홀란드</li>
+    <li> 손흥민</li>
+    <li> 김덕배</li>
+    <li> 린가드</li>
+    <li> 기성용</li>
+    <li> 이승모</li>
+    <li> 이승우</li>
+    <li> 정승원</li>
+    <li> 지동원</li>
+    <li> 안치우</li>
+
+    <br>
+    <script>
+      players = [ "홀란드", "손흥민","김덕배","린가드","기성용","이승모","이승우","정승원","지동원","안치우"];
+
+      playersimg = [ "img.0.webp", "img.1.webp","img.2.webp","img.3.webp","img.4.webp","img.5.webp","img.6.webp","img.7.webp","img.8.webp","img.9.webp"];
+
+      document.write("<li>"+ players +"</li>");
+      document.write("<li>"+players[1]);
+      document.write("<li>"+players[2]);
+    
+        // const players = ['홀란드', '손흥민','김덕배','린가드','기성용','이승모','이승우','정승원','지동원','안치우']
+        var i = 0;
+        while (i < players.length){
+          document.write("<li><a href='https://namu.wiki/w/" +  players[i] + "'>" + players[i] + "</li>");
+          document.write("<img src='" + playersimg[i] + "'>")
+        i = i + 1 ;
+      }
+
+   </script>
+   <h3>
+      count
+   </h3>
+   3
+   <br>
+    <script>
+      document.write(players.length);
+    </script>
+    <h3>
+       push
+    </h3>
+    <script>
+    players.push("김덕배");   
+        document.write(players.length);
+    </script>
+ 
+ 
+
+
+ </body>
+</html>
