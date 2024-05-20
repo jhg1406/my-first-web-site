@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <title>Olympic sport</title>
- </head>
- <body>
-   <h1><a href="1.html">Olympic Sports</a></h1>
 
-    <form action="2.html" method="get">
-    <button type="submit">Soccer</button>
-    </form>
-    <form action="3.html" method="get">
-    <button type="submit">Baseball</button>
-    </form>
-    <form action="4.html" method="get">
-    <button type="submit">Basketball</button>
-    </form> <br>
-    <img src="baseball.avif"
-width="50%" alt="html image">
-<h2>Baseball</h2>
-   <p>
-      <strong>It is a ball sport in which two teams of 10 players compete for victory or defeat by alternating between offense and defense for 9 innings each.</strong>
+<head>
+  <title>WEB</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-      <u>The batter on the offensive side gets one point if he hits the ball thrown by the opposing pitcher with his bat, goes around 1st, 2nd, and 3rd base, which are specific points in the stadium, and returns home.</u> If a batter or runner is out three times, offense and defense alternate and the game ends when the 9th inning is completed. Ultimately, the team with more points wins. If there is no game in the 9th inning, the Korean and Japanese leagues extend the game to the 12th inning, and if there is no game, it is decided as a draw (however, in the postseason, the game is played in the 15th inning), and in the United States, it is a win-loss game without a draw. It is a final battle until a decision is made.
-   </p>
- </body>
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div>
+      <input id="night_day" type="button" value="night" onclick="
+      nightDayHandler(self)">
+
+
+      <h2>JavaScript</h2>
+      <img src="https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80" width="30%">
+      <p>JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.</p>
+      <p>JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).</p>
+      
+      <input id="night_day_2" type="button" value="day" onclick="
+        var target = document.querySelector('body');      
+        if(this.value == 'day'){
+          target.style.backgroundColor = 'white';
+          target.style.color = 'black';
+          this.value = 'night';
+          document.querySelector('#night_day_1').value = 'night';
+        } else {
+          target.style.backgroundColor = 'black';
+          target.style.color = 'white';
+          this.value = 'day';
+          document.querySelector('#night_day_1').value = 'day';
+        }"
+      />
+    </div>
+  </div>
+</body>
+
 </html>
